@@ -2,6 +2,7 @@
 
 Ron Fitzpatrick, Owner rfjp.com, Sponsor g503.com<br/>
 Ken Creason, Tech Lead, Developer
+Chris Fourroux, just this guy , ya know?
 
 Document last updated: Wednesday, July 3, 2019
 
