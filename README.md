@@ -1,7 +1,7 @@
 # g503sn: G503.com Serial Number Database Application
 
 Ron Fitzpatrick, Owner rfjp.com, Sponsor g503.com<br/>
-Ken Creason, Tech Lead, Developer
+Ken Creason, Tech Lead, Developer<br/>
 Chris Fourroux, just this guy , ya know?
 
 Document last updated: Wednesday, July 3, 2019
