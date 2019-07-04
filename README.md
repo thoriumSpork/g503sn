@@ -11,4 +11,4 @@ This purpose of this application is to allow visitors to the g503.com site to re
 
 For the time being the intention is to use this file as a simple Software Design Document until it makes sense to separate that information.
 
-The G503 main website is based on WordPress so this version will be developed as a WordPress Plugin.
+The G503 main website is utilizing WordPress, however we will initially develop this as a standalone application and convert it to a WordPress Plugin later if necessary.
