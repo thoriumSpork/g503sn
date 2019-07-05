@@ -52,3 +52,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['sn'] = "sn/index";
+$route['snCreate']['create'] = "sn/create";
+$route['snEdit/(:any)'] = "sn/edit/$1";
+$route['snUpdate/(:any)']['put'] = "sn/update/$1";
+$route['snDelete/(:any)']['delete'] = "sn/delete/$1";
