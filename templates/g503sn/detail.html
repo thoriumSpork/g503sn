@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'g503sn/style.css' %}" />
+<div>Military Jeep Model: {{ jeep.get_xmodel_display }}</div>
+<div>Serial Number: {{ jeep.xserialnumber }}</div>
+<div>Mil. Reg. (Hood) number: {{ jeep.xhood }}</div>
+<div>Frame Number: {{ jeep.xframe }}</div>
+<div>Engine Number: {{ jeep.xengine }}</div>
+<div>Body Number: {{ jeep.xbody }}</div>
+<div>Body Type: {{ jeep.xbodytype }}</div>
+<div>Factory Mystery Code: {{ jeep.xfactory }}</div>
+<div>Gross Weight: {{ jeep.xweight }}</div>
+<div>Data Plate Origin: {{ jeep.xplateorigin }}</div>
+<div>Data Plate Material: {{ jeep.xplate }}</div>
+<div>Date of Delivery: {{ jeep.xdateofmanufacture }}</div>
+
+<div>Submitted by:</div>
+<div>Date of Acquisition: {{ jeep.xdateofacquisition }}</div>
+<div>Location of Jeep: {{ jeep.xcity }} {{ jeep.xstate }} {{ jeep.xcountry }}</div>
+<div>Date Submitted: {{ jeep.xdatecreated }}</div>
+<div>Date Last Modified: {{ jeep.xdatemodified }}</div>
+<div>G503 Spotlight Blurb: <div>{{ jeep.xblurb }}</div></div>
+<div>Notes/Comments: <div>{{ jeep.xdetails }}</div></div>
+<div>URL for more Info: {{ jeep.xurl }}</div>
+<div>G503 Spotlight Count: {{ jeep.xspotlightcount }}</div>
+
+<div>Small Image</div>
+<div>https://g503.com/oldsite/images/serial-numbers/{{ jeep.ximagesmall }}</div>
+<div>Medium Image</div>
+<div>https://g503.com/oldsite/images/serial-numbers/{{ jeep.ximagemedium }}</div>
+<div>Large Image</div>
+<div>https://g503.com/oldsite/images/serial-numbers/{{ jeep.ximagelarge }}</div>

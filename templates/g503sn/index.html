@@ -1,0 +1,12 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'g503sn/style.css' %}" />
+<div>Five newest entries</div>
+{% if latest_jeep_list %}
+           <ul>
+    {% for jeep_entry in latest_jeep_list %}
+           <li><a href="{% url 'detail' jeep_entry.xid %}">{{ jeep_entry.xserialnumber }}</a> {{ jeep_entry.get_xmodel_display }}</li>
+    {% endfor %}
+       </ul>
+{% else %}
+           <p>No jeeps are available.</p>
+{% endif %}
