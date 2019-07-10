@@ -52,3 +52,4 @@ class SerialNumbers(models.Model):
         db_table = 'serialnumbers_tbl'
         verbose_name = 'Serial Number'
         verbose_name_plural = 'Serial Numbers'
+        ordering = ['xmodel','xserialnumber']

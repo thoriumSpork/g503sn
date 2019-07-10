@@ -15,10 +15,10 @@ SECRET_KEY = '<your secret >'
 DATABASES = {  
     'default': {  
         'ENGINE': 'django.db.backends.mysql',  
-        'NAME': '<your database name>',  
+        'NAME': '< your database name >',  
         'USER': '< your db user>',  
         'PASSWORD': '< your wavy washers >',  
-        'HOST': '<your db server>',   # Or an IP Address that your DB is hosted on  
+        'HOST': '< your db server >',   # Or an IP Address that your DB is hosted on  
         'PORT': '3306',  
     }  
 }  

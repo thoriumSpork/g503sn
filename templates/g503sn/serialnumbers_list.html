@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+{% block content %}
+  <h1>Jeep List</h1>
+  {% if serialnumbers_list %}
+  <ul>
+    {% for unit in serialnumbers_list %}
+      <li>
+        <a href="{{ unit.xserialnumber }}">{{ unit.get_xmodel_display }}</a> ({{unit.xlastname}})
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>There are no jeeps in the list.</p>
+  {% endif %}
+{% endblock %}
+{% block pagination %}
+    {% if is_paginated %}
+        <div class="pagination">
+            <span class="page-links">
+                {% if page_obj.has_previous %}
+                    <a href="{{ request.path }}?page={{ page_obj.previous_page_number }}">previous</a>
+                {% endif %}
+                <span class="page-current">
+                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                </span>
+                {% if page_obj.has_next %}
+                    <a href="{{ request.path }}?page={{ page_obj.next_page_number }}">next</a>
+                {% endif %}
+            </span>
+        </div>
+    {% endif %}
+  {% endblock %}
+</body>
+</html>
